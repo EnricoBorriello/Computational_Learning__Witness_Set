@@ -1,24 +1,13 @@
 # Witness-Set
 A collection of functions to calculate the witness set of ensembles of binary vectors.
 
+Given a list of binary n-tuples (for simplicty 'vectors' in what follows), **distinguishing_nodes(attractors,att_index)**
+finds the distinguishing nodes (i.e. nodes with unique values) between the reference 
+attractor (identified by the "att_index" id) and all the other attractors in the list.
 
-Given a list of attractors, "attractors", 
-    find the distinguishing nodes (i.e. nodes with unique values) between the reference 
-    attractor (identified by the "att_index" id) and all the other attractors in the list.
+The algorithm tests combinations of increasing length of indices. 
+For each combination, it compares the values of the selected entries in the reference vector 
+with the same entries in all the other attractors. 
     
-    The "attractors" argument is expected to be a list of binary lists. 
-
-    To find the distinguishing nodes, the function starts with a combination 
-    length of 1 and iterates over all possible combinations of nodes. 
-    It then compares the values of the selected nodes in the reference attractor 
-    with the same nodes in all the other attractors. 
-    
-    If the values are different for all the other attractors, 
-    then the current combination of nodes is the distinguishing nodes 
-    and is returned by the function.
-
-    The function continues to increase the combination length 
-    and repeats the process until it finds the distinguishing nodes 
-    or exhausts all possible combinations. 
-    If it exhausts all possible combinations and cannot find distinguishing nodes, 
-    it will return None.
+If the values are different for all the other vectors, 
+then the current combination of nodes is a witness set, and the function returns the IDs of the selected entries.
