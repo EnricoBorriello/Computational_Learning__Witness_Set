@@ -14,5 +14,4 @@ then the current combination of nodes is a witness set, and the function returns
 
 
 **Related Repositories:**
-
-https://github.com/EnricoBorriello/AttAttach
+* https://github.com/EnricoBorriello/AttAttach
