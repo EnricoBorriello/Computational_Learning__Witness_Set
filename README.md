@@ -11,3 +11,7 @@ with the same entries in all the other attractors.
     
 If the values are different for all the other vectors, 
 then the current combination of nodes is a witness set, and the function returns the IDs of the selected entries.
+
+
+**Related Repositories:**
+https://github.com/EnricoBorriello/AttAttach
