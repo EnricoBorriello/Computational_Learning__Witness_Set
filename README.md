@@ -16,35 +16,18 @@ The function **avg_witness_set_size(vectors)** simply
 calculates the average witness set 
 across the entire list of vectors.
 
+**distribution_parameters_fixed_r (n, r, sim)** generates the distribution of average sizes of witness sets over an
+ensembles of **sim** simulations. Each simulations includes **r** binary vectors of length **n**. 
+The output list includes: 
 
+* The number of vectors used in the simulations (r).
+* The average of the <|w|> values.
+* The standard deviation of this average.
+* The minimum value of the distribution.
+* The maximum value of the distribution.
 
- distribution_parameters_fixed_r (n,r,sim=100):
-    
-    """
-    The function takes three parameters:
-
-    n = The number of the binary n-tuples.
-    r = The number of such n-tuples.
-    sim = The number of simulations to perform. (The default value is 100 if not provided.)
-    The avgd_dist list is initialized to store the average deltas for each simulation.
-
-    In each simulation:
-
-    r n-tuples are randomly selected from the list of all possible binary n-tuples (also 'vectors in the following').
-    The function "avg_witness_set_size" is used to calculate the average witness set size of these r vectors.
-    After all the simulations are completed, the function returns the following parameters of the distribution of
-    <|w|> values:
-
-    The number of vectors used in the simulations (r).
-    The average of the <|w|> values.
-    The standard deviation of this average.
-    The minimum value of the distribution.
-    The maximum value of the distribution.
-
-
-
-
-
+The r vectors are randomly selected from the list of all possible binary n-tuples. This guarantees no repetition, and 
+an even likelihood of 0s and 1s over the list.
 
 **Related Repositories:**
 * https://github.com/EnricoBorriello/AttAttach
