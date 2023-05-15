@@ -33,5 +33,7 @@ an even likelihood of 0s and 1s over the list.
 * https://github.com/EnricoBorriello/AttAttach
 
 **Related Articles:**
-* ...
+* E. Kushilevitz, N. Linial, Y. Rabinovich & M. Saks, *Witness sets for families of binary vectors*. 
+J. Comb. Theory Ser. A **73**, 376–380 (1996).
+(https://www.sciencedirect.com/science/article/pii/S009731659680015X?via%3Dihub)
 * [E. Borriello & B.C. Daniels, *The basis of easy controllability in Boolean networks*. Nat Commun **12**, 5227 (2021)](https://www.nature.com/articles/s41467-021-25533-3)
