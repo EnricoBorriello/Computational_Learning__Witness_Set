@@ -51,4 +51,4 @@ across the entire list of vectors.
 
 **Related Articles:**
 * ...
-* [article](https://www.nature.com/articles/s41467-021-25533-3)
+* [Borriello, E., Daniels, B.C. The basis of easy controllability in Boolean networks. Nat Commun 12, 5227 (2021)](https://www.nature.com/articles/s41467-021-25533-3)
