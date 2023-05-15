@@ -10,10 +10,10 @@ The function **'avg_witness_set_size(vectors)'** simply calculates the average w
 
 The function **'distribution_parameters_fixed_r(n, r, sim)'** generates the distribution of average sizes of witness sets over an ensemble of **'sim'** simulations. Each simulation includes **'r'** binary vectors of length **'n'**. The output list includes:
 
-* The number of vectors used in the simulations (**r**).
-* The average of the values.
-* The standard deviation of this average.
-* The minimum value of the distribution.
+* The number of vectors used in the simulations (**r**);
+* The average of the values;
+* The standard deviation of this average;
+* The minimum value of the distribution;
 * The maximum value of the distribution.
 
 The **'r'** vectors are randomly selected from the list of all possible binary n-tuples. This guarantees no repetition and an equal likelihood of 0s and 1s in the list.
