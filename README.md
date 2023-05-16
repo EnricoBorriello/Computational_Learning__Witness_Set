@@ -16,7 +16,7 @@ The function **'distribution_parameters_fixed_r(n, r, sim)'** generates the dist
 * The minimum value of the distribution;
 * The maximum value of the distribution.
 
-The **'r'** vectors are randomly selected from the list of all possible binary n-tuples. This guarantees no repetition and an equal likelihood of 0s and 1s in the list.
+The **'r'** vectors are randomly selected from the list of all possible binary n-tuples. This guarantees no repetition and an equal likelihood of 0s and 1s over the whole set of vectors.
 
 **Related Repositories:**
 * https://github.com/EnricoBorriello/AttAttach
