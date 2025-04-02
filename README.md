@@ -1,4 +1,4 @@
-# Witness-Set
+# Witness Set
 This repository contains a small collection of functions for calculating the witness set of ensembles of binary vectors.
 
 Given a list of binary n-tuples (referred to as 'vectors' hereafter), the function **'distinguishing_nodes(vectors, index)'** identifies the distinguishing nodes—nodes with unique values—between the reference vectors (identified by the **'index'** ID) and all other vectors in the list.
