@@ -1,3 +1,100 @@
+# 🔍 Distinguishing Nodes in Binary Attractors
+
+This repository provides tools to analyze binary attractors (n-dimensional binary vectors) and identify **distinguishing nodes**—the minimal set of node positions that differentiate one attractor from all others.
+
+## 📦 Features
+
+- **Find distinguishing nodes** between binary attractors.
+- **Compute average witness set size** for a collection of attractors.
+- **Simulate distributions** of average witness set sizes under random sampling.
+
+---
+
+## 🧠 Key Concepts
+
+### 🔹 Attractor
+A binary vector representing a state in a dynamical system (e.g., Boolean networks).
+
+### 🔹 Distinguishing Nodes
+A minimal subset of positions (nodes) whose values in one attractor differ from the corresponding values in all other attractors.
+
+### 🔹 Witness Set
+The set of distinguishing nodes for a given attractor.
+
+---
+
+## 🧩 Functions
+
+### `distinguishing_nodes(attractors, att_index)`
+Finds a minimal combination of nodes that uniquely identifies the attractor at `att_index` compared to all others.
+
+- **Input:**  
+  `attractors` – List of binary vectors  
+  `att_index` – Index of the target attractor
+
+- **Output:**  
+  Tuple of node indices that distinguish the selected attractor.
+
+---
+
+### `avg_witness_set_size(attractors)`
+Computes the **average number of distinguishing nodes** (witness set size) across all attractors in the list.
+
+- **Input:**  
+  `attractors` – List of unique binary vectors
+
+- **Output:**  
+  Float representing the mean witness set size.
+
+---
+
+### `distribution_parameters_fixed_r(n, r, sim=100)`
+Estimates the statistical properties of average witness set sizes for random sets of binary attractors.
+
+- **Inputs:**
+  - `n` – Length of each binary vector (number of nodes)
+  - `r` – Number of attractors per simulation
+  - `sim` – Number of simulation runs (default: 100)
+
+- **Output:**  
+  List containing:
+  - `r` – Number of vectors used
+  - Mean of average witness sizes
+  - Standard deviation
+  - Minimum and maximum values of the distribution
+
+---
+
+## ⚙️ Example Usage
+
+```python
+# Define some binary attractors
+attractors = [
+    [0, 1, 1],
+    [1, 1, 0],
+    [0, 0, 1]
+]
+
+# Find distinguishing nodes for attractor at index 0
+distinguishing_nodes(attractors, 0)
+
+# Calculate average witness set size
+avg_witness_set_size(attractors)
+
+# Run simulation on random 5-bit binary attractors
+distribution_parameters_fixed_r(n=5, r=10, sim=100)
+
+
+
+
+
+
+
+
+
+
+
+
 # Witness Set
 This repository contains a small collection of functions for calculating the witness set of ensembles of binary vectors.
 
