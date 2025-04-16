@@ -66,7 +66,7 @@ Estimates the statistical properties of average witness set sizes for random set
 
 ## Example Usage
 
-```python
+<pre>```python
 # Define some binary attractors
 attractors = [
     [0, 1, 1],
@@ -82,7 +82,7 @@ avg_witness_set_size(attractors)
 
 # Run simulation on random 5-bit binary attractors
 distribution_parameters_fixed_r(n=5, r=10, sim=100)
-'''
+``` </pre>
 ---
 
 
