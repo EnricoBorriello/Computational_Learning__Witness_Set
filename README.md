@@ -22,7 +22,7 @@ The **'r'** vectors are randomly selected from the list of all possible binary n
 
 ---
 
-## 🧩 Functions
+##  Functions
 
 ### `distinguishing_nodes(attractors, att_index)`
 Finds a minimal combination of nodes that uniquely identifies the attractor at `att_index` compared to all others.
@@ -82,7 +82,7 @@ avg_witness_set_size(attractors)
 
 # Run simulation on random 5-bit binary attractors
 distribution_parameters_fixed_r(n=5, r=10, sim=100)
-```
+'''
 ---
 
 
