@@ -1,6 +1,6 @@
 # Minimal Sets of distinguishing Elements in Binary Arrays
 
-This repository contains a small collection of functions for calculating the witness set of ensembles of binary vectors.
+This repository contains a collection of functions for calculating the witness set of ensembles of binary arrays, namely a minimal subset of positions (indices) in the binary arrays such that the values at those positions distinguish one array from all the others.
 
 Given a list of binary n-tuples (referred to as 'vectors' hereafter), the function **'distinguishing_nodes(vectors, index)'** identifies the distinguishing nodes—nodes with unique values—between the reference vectors (identified by the **'index'** ID) and all other vectors in the list.
 
