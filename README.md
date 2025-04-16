@@ -66,15 +66,15 @@ Estimates the statistical properties of average witness set sizes for random set
 
 ## Example Usage
 
-<pre>```python
-# Define some binary attractors
+<pre>
+# Define some binary vectors
 attractors = [
     [0, 1, 1],
     [1, 1, 0],
     [0, 0, 1]
 ]
 
-# Find distinguishing nodes for attractor at index 0
+# Find distinguishing elements for vector at index 0
 distinguishing_nodes(attractors, 0)
 
 # Calculate average witness set size
@@ -82,7 +82,7 @@ avg_witness_set_size(attractors)
 
 # Run simulation on random 5-bit binary attractors
 distribution_parameters_fixed_r(n=5, r=10, sim=100)
-``` </pre>
+ </pre>
 ---
 
 
