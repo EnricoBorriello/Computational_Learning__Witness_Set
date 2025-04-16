@@ -1,4 +1,4 @@
-# Distinguishing Nodes in Binary Attractors
+# Distinguishing Elements in Binary Vectors
 
 This repository contains a small collection of functions for calculating the witness set of ensembles of binary vectors.
 
